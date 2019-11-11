@@ -1,0 +1,14 @@
+apiVersion: webapp.com.shaunnewman/v1alpha1
+kind: WebApp
+metadata:
+  name: webapp-sample
+spec:
+  instances: 2
+  image: gcr.io/kuar-demo/kuard-amd64:blue
+  healthCheckEndpoint: /healthy
+  cpu: 400m
+  memory: 56Mi 
+  env:
+    TEST: some-value
+  routes:
+    - webapp-sample.example.com

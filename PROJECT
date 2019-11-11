@@ -1,0 +1,7 @@
+version: "2"
+domain: com.shaunnewman
+repo: github.com/scnewma/app-controller
+resources:
+- group: webapp
+  version: v1alpha1
+  kind: WebApp
